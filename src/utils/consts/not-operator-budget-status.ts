@@ -1,0 +1,6 @@
+export const NOT_OPERATOR_BUDGED_STATUS = [
+	"SENT",
+	"UNDER_REVIEW",
+	"NOT_REQUESTED",
+	"REQUESTED",
+];
