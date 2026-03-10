@@ -6,7 +6,7 @@ import { UsersProvider } from "./contexts/users-provider";
 
 export function Users() {
 	useEffect(() => {
-		document.title = "Colaboradores";
+		document.title = "Equipa";
 	});
 
 	const { user } = useCurrentUser();

@@ -20,7 +20,7 @@ export function PhoneInputField<T extends FieldValues>({
 			control={form.control}
 			render={({ field }) => (
 				<FormItem>
-					<FormLabel>Nome</FormLabel>
+					<FormLabel>Telefone</FormLabel>
 					<FormControl>
 						<InputWithIcon
 							icon={<PhoneIcon className="size-4" />}

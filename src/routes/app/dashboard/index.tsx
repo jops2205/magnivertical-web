@@ -6,7 +6,7 @@ import { DashboardProvider } from "./contexts/dashboard-provider";
 
 export function Dashboard() {
 	useEffect(() => {
-		document.title = "Painel de Controlo";
+		document.title = "Dashboard";
 	});
 
 	const { user } = useCurrentUser();

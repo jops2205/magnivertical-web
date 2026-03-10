@@ -46,7 +46,7 @@ const customerAccessorColumns: AccessorColumnDef<Customer>[] = [
 	},
 	{
 		accessorKey: "createdAt",
-		header: "Data de registo",
+		header: "Registado em",
 		cell: (createdAt) => <DateCell date={createdAt as Date} />,
 	},
 ];

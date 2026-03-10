@@ -63,19 +63,19 @@ export function MainNav() {
 
 	const items: NavigationItem[] = [
 		{
-			text: "Painel de Controlo",
+			text: "Dashboard",
 			url: "/",
 			roles: ["MANAGER"],
 		},
 		{
-			text: "Colaboradores",
-			url: "/users",
+			text: "Equipa",
+			url: "/team",
 			roles: ["MANAGER"],
 		},
 		{
 			text: "Tarefas",
 			url: "/tasks",
-			roles: ["MANAGER", "ASSISTANT", "OPERATOR"],
+			roles: ["MANAGER", "ASSISTANT"],
 		},
 		{
 			text: "Clientes",
@@ -86,11 +86,6 @@ export function MainNav() {
 			text: "Obras",
 			url: "/projects",
 			roles: ["MANAGER", "ASSISTANT"],
-		},
-		{
-			text: "Serviços",
-			url: "/services",
-			roles: ["OPERATOR"],
 		},
 	];
 

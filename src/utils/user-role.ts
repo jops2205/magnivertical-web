@@ -14,10 +14,6 @@ export const userRoleOptions: Options = [
 		key: "Gerente",
 		value: "MANAGER",
 	},
-	{
-		key: "Operador",
-		value: "OPERATOR",
-	},
 ];
 
 const userRoleLabels = new Map(

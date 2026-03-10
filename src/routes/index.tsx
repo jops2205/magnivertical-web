@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router";
 import { AppLayout } from "./app/_layout";
 import { Customers } from "./app/customers";
 import { Dashboard } from "./app/dashboard";
-import { IncompleteBudgets } from "./app/incomplete-budgets";
 import { Projects } from "./app/projects";
 import { Project } from "./app/projects/_id";
 import { Tasks } from "./app/tasks";
@@ -28,7 +27,7 @@ export const router = createBrowserRouter([
 				element: <Dashboard />,
 			},
 			{
-				path: "/users",
+				path: "/team",
 				element: <Users />,
 			},
 			{
@@ -46,10 +45,6 @@ export const router = createBrowserRouter([
 			{
 				path: "/projects/:id",
 				element: <Project />,
-			},
-			{
-				path: "/services",
-				element: <IncompleteBudgets />,
 			},
 		],
 	},

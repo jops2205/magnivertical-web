@@ -20,11 +20,11 @@ export function AttachmentsUrlInputField<T extends FieldValues>({
 			control={form.control}
 			render={({ field }) => (
 				<FormItem>
-					<FormLabel>Anexo</FormLabel>
+					<FormLabel>Link para os anexos</FormLabel>
 					<FormControl>
 						<InputWithIcon
 							icon={<DownloadIcon className="size-4" />}
-							placeholder="Introduza o anexo"
+							placeholder="Introduza o link para os anexos"
 							{...field}
 						/>
 					</FormControl>

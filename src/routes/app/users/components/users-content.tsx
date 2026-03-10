@@ -31,7 +31,7 @@ export function UsersContent() {
 		<div className="space-y-4">
 			<div className="flex items-center justify-between">
 				<div>
-					<h1 className="font-bold text-3xl tracking-tight">Colaboradores</h1>
+					<h1 className="font-bold text-3xl tracking-tight">Equipa</h1>
 					<p className="hidden text-zinc-500 md:block dark:text-zinc-400">
 						Visualize e edite informações dos membros da sua equipa.
 					</p>

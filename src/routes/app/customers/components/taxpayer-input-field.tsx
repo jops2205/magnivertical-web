@@ -20,7 +20,7 @@ export function TaxpayerInputField<T extends FieldValues>({
 			control={form.control}
 			render={({ field }) => (
 				<FormItem>
-					<FormLabel>Nome</FormLabel>
+					<FormLabel>Contribuinte</FormLabel>
 					<FormControl>
 						<InputWithIcon
 							icon={<IdCardIcon className="size-4" />}

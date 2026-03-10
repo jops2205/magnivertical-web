@@ -12,7 +12,7 @@ export function FilterSheetActions({
 }: FilterSheetActionsProps) {
 	return (
 		<SheetFooter>
-			<Button>Ver Resultados</Button>
+			<Button>Ver resultados</Button>
 			<Button
 				type="button"
 				variant="outline"

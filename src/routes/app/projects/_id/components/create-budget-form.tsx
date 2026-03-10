@@ -42,7 +42,7 @@ export const createBudgetFormSchema = z.object({
 			/^(100|[1-9]?[0-9])$/,
 			"É necessário introduzir um desconto no intervalo (0-100)",
 		),
-	attachmentsUrl: z.string().min(1, "É necessário introduzir o anexo"),
+	attachmentsUrl: z.url("É necessário introduzir uma URL válida"),
 	items: z.array(createBudgetItemFormSchema).min(1),
 });
 

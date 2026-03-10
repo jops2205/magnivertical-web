@@ -51,12 +51,12 @@ const taskAccessorColumns: AccessorColumnDef<Task>[] = [
 	},
 	{
 		accessorKey: "createdAt",
-		header: "Data de registo",
+		header: "Registada em",
 		cell: (createdAt) => <DateCell date={createdAt as Date} />,
 	},
 	{
 		accessorKey: "scheduledAt",
-		header: "Data de agendamento",
+		header: "Agendada em",
 		cell: (scheduledAt) => <DateCell date={scheduledAt as Date} />,
 	},
 ];

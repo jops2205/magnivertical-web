@@ -18,9 +18,7 @@ export function DashboardContent() {
 		<div className="space-y-6">
 			<div className="flex items-center justify-between">
 				<div>
-					<h1 className="font-bold text-3xl tracking-tight">
-						Painel de Controlo
-					</h1>
+					<h1 className="font-bold text-3xl tracking-tight">Dashboard</h1>
 					<p className="hidden text-zinc-500 md:block dark:text-zinc-400">
 						Acompanhe estatísticas detalhadas sobre clientes e obras.
 					</p>

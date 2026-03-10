@@ -39,7 +39,11 @@ export function NumberInputField<T extends FieldValues>({
 						<NumericFormat
 							customInput={InputWithIcon}
 							allowNegative={false}
-							{...field}
+							value={field.value}
+							onValueChange={(values) => {
+								field.onChange(values.value);
+							}}
+							onBlur={field.onBlur}
 							{...props}
 						/>
 					</FormControl>

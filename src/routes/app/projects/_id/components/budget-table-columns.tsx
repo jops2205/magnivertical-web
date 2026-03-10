@@ -46,7 +46,7 @@ const budgetAccessorColumns: AccessorColumnDef<Budget>[] = [
 	},
 	{
 		accessorKey: "attachmentsUrl",
-		header: "Anexo",
+		header: "Link para os anexos",
 		cell: (value) => {
 			const attachmentsUrl = value as string;
 
@@ -74,7 +74,7 @@ const budgetAccessorColumns: AccessorColumnDef<Budget>[] = [
 	},
 	{
 		accessorKey: "createdAt",
-		header: "Data de registo",
+		header: "Registado em",
 		cell: (createdAt) => <DateCell date={createdAt as Date} />,
 	},
 ];
