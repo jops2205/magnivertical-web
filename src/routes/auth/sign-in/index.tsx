@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
+import { useCheckAuthentication } from "@/api/hooks/session/use-check-authentication";
 import {
 	Card,
 	CardContent,
@@ -10,9 +11,22 @@ import {
 import { SignInForm } from "./components/sign-in-form";
 
 export function SignIn() {
+	const navigate = useNavigate();
+	const { checkAuthentication } = useCheckAuthentication();
+
 	useEffect(() => {
 		document.title = "Iniciar Sessão";
-	});
+
+		const verifyAuth = async () => {
+			try {
+				await checkAuthentication();
+
+				navigate("/", { replace: true });
+			} catch {}
+		};
+
+		verifyAuth();
+	}, [navigate, checkAuthentication]);
 
 	return (
 		<div className="flex min-h-svh items-center justify-center p-6 md:p-10">

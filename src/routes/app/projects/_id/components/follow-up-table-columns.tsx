@@ -43,17 +43,17 @@ const followUpAccessorColumns: AccessorColumnDef<FollowUp>[] = [
 	},
 	{
 		accessorKey: "createdAt",
-		header: "Date de registo",
+		header: "Registado em",
 		cell: (createdAt) => <DateCell date={createdAt as Date} />,
 	},
 	{
 		accessorKey: "scheduledAt",
-		header: "Data de agendamento",
+		header: "Agendado em",
 		cell: (scheduledAt) => <DateCell date={scheduledAt as Date} />,
 	},
 	{
 		accessorKey: "resolvedAt",
-		header: "Data de realização",
+		header: "Realizado em",
 		cell: (value) => {
 			const resolvedAt = value as Date | null;
 

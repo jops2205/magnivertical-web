@@ -3,8 +3,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme {  
-	--font-inter: "Inter", sans-serif; 
+@theme {
+	--font-inter: "Inter", sans-serif;
 }
 
 @theme inline {

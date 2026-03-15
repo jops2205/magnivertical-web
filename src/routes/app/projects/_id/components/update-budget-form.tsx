@@ -27,6 +27,8 @@ import {
 } from "./create-budget-form";
 import { DescriptionInputField } from "./description-input-field";
 import { DiscountInputField } from "./discount-input-field";
+import { PriceInputField } from "./price-input-field";
+import { QuantityInputField } from "./quantity-input-field";
 
 export const updateBudgetFormSchema = createBudgetFormSchema.extend({
 	items: z.array(
@@ -89,8 +91,8 @@ export function UpdateBudgetForm({ budget }: UpdateBudgetFormProps) {
 	const handleInsertItemButtonClick = () => {
 		append({
 			name: "",
-			price: "0",
-			quantity: "1",
+			price: "",
+			quantity: "",
 			type: "ALUMINUM",
 		});
 	};
@@ -141,14 +143,14 @@ export function UpdateBudgetForm({ budget }: UpdateBudgetFormProps) {
 											form={form}
 											path={`items.${index}.type`}
 										/>
-										{/* <PriceInputField
-                      form={form}
-                      path={`items.${index}.price`}
-                    />
-                    <QuantityInputField
-                      form={form}
-                      path={`items.${index}.quantity`}
-                    /> */}
+										<PriceInputField
+											form={form}
+											path={`items.${index}.price`}
+										/>
+										<QuantityInputField
+											form={form}
+											path={`items.${index}.quantity`}
+										/>
 										<BudgetItemListFooter
 											disableAction={fields.length <= 1}
 											onRemoveItemButtonClick={() => {

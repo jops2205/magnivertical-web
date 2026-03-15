@@ -65,7 +65,7 @@ export function DataTablePagination({
 						<SelectTrigger size="sm" className="w-[68px]">
 							<SelectValue />
 						</SelectTrigger>
-						<SelectContent side="top">
+						<SelectContent side="top" align="start">
 							{[10, 20, 30, 40, 50].map((perPage) => (
 								<SelectItem key={perPage} value={perPage.toString()}>
 									{perPage}
